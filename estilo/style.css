@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&family=Ubuntu:wght@400;700&display=swap");
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Bebas Neue", sans-serif;
+    --fonte-android: 'Android', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(177, 176, 139);
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgb(1, 136, 1), #063d1e);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+header > h1 {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3.2em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.397);
+}
+
+header > p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    color: white;
+    max-width: 564px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.397);
+}
+
+nav {
+    background-color: rgba(27, 75, 27, 0.87);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.185);
+}
+
+nav > a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.08em;
+    color: rgb(216, 253, 216);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition-duration: .5s; 
+}
+
+nav > a:hover {
+    background-color: rgb(137, 199, 137);
+    color: #042212;
+}
+
+main {
+
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.295);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {
+    color: var(--cor5);
+    font-family: "Google Sans", sans-serif;
+}
+
+main h2 {
+    font-family: "Ubuntu", sans-serif;
+    color: var(--cor5);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+}
+
+main p {
+    font-family: "Open Sans", sans-serif;
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+
+main strong {
+    color: #042212;
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #042212;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: #042212;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 370px;
+    display: block;
+    margin: auto;
+}
+
+div.video {
+    background-color: #042212;
+    margin: 0px -20px 15px -20px;
+    padding: 10px;
+    padding-bottom: 40%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+
+}
+
+aside h3 {
+    font-family: "Ubuntu", sans-serif;
+    background-color: #095e30;
+    color: white;
+    padding: 6px;
+}
+
+aside > ul {
+    list-style-type: '🗸';
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+
+}
